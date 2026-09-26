@@ -1,0 +1,287 @@
+%-------------------------
+% EECS Resume in Latex
+% Author : Eric Zhong
+% Based off of : Jake's Resume - https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+% License : MIT
+%------------------------
+
+% Preserve this resume's layout across newer LaTeX installations.
+\RequirePackage[2024/11/01]{latexrelease}
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{siunitx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+ \usepackage[sfdefault]{noto-sans} %Good Option
+% \usepackage[default]{sourcesanspro} %Good Option
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.55in} % Bottom margin (effectively)
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{1pt}\scshape\raggedright\Large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item \small{#1}\vspace{-2pt}
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \small #3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Company block: company name and location, followed by one or more roles.
+\newcommand{\resumeCompanyHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      {\fontsize{11}{13}\selectfont\textbf{#1}} & \small #2 \\
+    \end{tabular*}\par\nobreak\vspace{-\parskip}\vspace{-4pt}
+}
+
+% Role block: title and dates, followed by its experience bullet list.
+\newcommand{\resumeRoleHeading}[2]{
+    \par\nobreak\vspace{4pt}\noindent
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \hspace{0.12in}\textbf{\small #1} & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeExperienceItemListStart}{\begin{itemize}[leftmargin=2.8em]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Eric Zhong} \\ \vspace{2pt}
+    \small \raisebox{-0.0\height}\faPhone\ 267-481-6608 ~ \href{mailto:eric@erictzhong.com}{\raisebox{-0.1\height}\faEnvelope { eric@erictzhong.com}} ~
+    \href{https://linkedin.com/in/erictzhong}{\raisebox{-0.03\height}\faLinkedin\ {linkedin.com/in/erictzhong }}
+    \href{https://github.com/etzhong}{\raisebox{-0.1\height}\faGithub\ {github.com/etzhong }}
+    \href{https://www.erictzhong.com}{\raisebox{-0.1\height}\faGlobe\ {erictzhong.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\vspace{-21pt}
+\section{Education}
+  \resumeSubHeadingListStart
+
+    % Degrees
+    \vspace{1pt}
+    \resumeSubheading
+      {\large{University of Southern California}}{GPA: 4.00\vspace{2pt}}
+      {\textbf{M.S. Electrical Engineering} (Computer Architecture and Chip Design Specialization)}{Graduated May 2025}
+    \resumeSubheading
+      {}{\vspace{-12pt}}
+      {\textbf{B.S. Computer Engineering and Computer Science}}{(B.S. + M.S.)}
+
+    % Awards
+    \vspace{-9pt}
+    \resumeItem{{\textbf{Honors}: Top of Class, Presidential Merit Scholarship, Provost Research Fellowship, Engineering Honors Fellowship}}
+
+    % Coursework
+    \vspace{-1pt}
+    \resumeSubheading
+        {{Relevant Coursework}}{}{
+          \footnotesize{\hspace{0.58cm}\textbf{CS:} Algorithms and Computing Theory, Operating Systems, Compilers, Networking, C++, Data Structures and OOP, Software Engineering}\\
+          \footnotesize{\hspace{0.5cm}\textbf{ECE:} ASIC Design and Tapeout, Computer Microarchitecture, Computer Systems Architecture, VLSI Circuit Design, System-on-Chip (SoCs),}\\
+            \footnotesize{\hspace{1.07cm} FPGAs, Digital System Design, Network Processor Design, Parallel Computing Systems, Embedded and Distributed Systems}\\
+          \footnotesize{\hspace{0.25cm}\textbf{Math:} Probability and Statistics, Linear Algebra, Discrete Math, Multivariable Calculus, Differential Equations}
+        }{}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\vspace{-12pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeCompanyHeading
+      {NVIDIA}{Santa Clara, CA}
+    \resumeRoleHeading
+      {GPU Architect}{June 2025---Present}
+    \resumeExperienceItemListStart
+        \resumeItem{Driving hardware design, arch specification, \textbf{C++} simulation, and functional verification for NVIDIA's next-generation Feynman GPUs. Owned IPs include host \textbf{DMA engines} and work schedulers, \textbf{PCIe}/\textbf{CXL} controller endpoints, and interrupt controllers}
+        \resumeItem{Writing custom firmware in \textbf{C} and \textbf{RISC-V assembly} for on-chip dynamic CUDA work scheduling and dependency resolution---enabling low-latency GPU work launch with reduced overhead and enhanced QoS}
+        \resumeItem{Developing simulation libraries in \textbf{C++} and \textbf{C} within NVIDIA's proprietary resman \textbf{kernel driver} and MODS testing framework for initial architectural studies and bring-up of new GPU hardware and software features}
+        \resumeItem{Performing functional and performance testing using a \textbf{Python DSL} across \textbf{C++} simulation, \textbf{RTL}, \textbf{FPGA} emulation, and silicon}
+        \resumeItem{Creating a new \textbf{Python} and \textbf{Perl} based flow for communicating multi-die hardware device information to driver software}
+        \resumeItem{Training and tuning a new \textbf{AI agent} for \textbf{DFD/DFT}---enabling autonomous debug and RCA of functional failures on end silicon}
+    \resumeItemListEnd
+    \vspace{-2pt}
+    \resumeRoleHeading
+      {GPU Architecture Intern}{May 2024---August 2024}
+      \resumeExperienceItemListStart
+            \resumeItem{Developed a \textbf{C++} functional model (fmodel) for a new GPU hardware IP enabling low-latency, real-time interrupt message processing---facilitating RTL, driver, and CUDA development for NVIDIA’s flagship Rubin GPUs}
+            \resumeItem{Built and deployed a new lightweight unit testing infrastructure using \textbf{C++} and \textbf{gtest} within NVIDIA's proprietary simulation environment---accelerating functional and performance testing by up to a 20x speedup over existing testing workflows}
+            \resumeItem{Refactored legacy \textbf{C++}/\textbf{SystemC} fmodel with \textbf{C++20} source to improve core sim performance and future code maintainability}
+      \resumeItemListEnd
+    \vspace{4pt}
+
+    \resumeCompanyHeading
+      {USC Photonic Computing Lab (Opticore)}{Los Angeles, CA}
+    \resumeRoleHeading
+      {Research Fellow}{August 2022---May 2024}
+      \resumeExperienceItemListStart
+        \resumeItem{Co-invented and published a novel teraFLOP optical tensor processor with a 25 fJ/Op energy efficiency---offering up to a 40x efficiency improvement over current state-of-the-art electronic processors for machine learning workflows (\href{https://www.science.org/doi/10.1126/sciadv.adu0228}{\underline{Publication Link}})}
+        \resumeItem{Designed and verified a high-throughput (10+ GSPS), low-latency (< 100 ns) \textbf{FPGA}-based waveform generation and signal processing module using \textbf{SystemVerilog} and \textbf{C++}. Synthesized design onto an AMD Zynq UltraScale+ RFSoC using \textbf{Vivado}}
+        \resumeItem{Developed a custom \textbf{Python} library for host interfacing with lab \textbf{FPGAs} along \textbf{100G Ethernet} to facilitate optical experiments}
+      \resumeItemListEnd
+    \vspace{4pt}
+
+    \vspace{3pt}
+    \resumeCompanyHeading
+      {IQVIA}{Philadelphia, PA}
+    \resumeRoleHeading
+      {Software Engineering Intern}{May 2022---August 2022}
+      \resumeExperienceItemListStart
+        \resumeItem{Engineered a high-throughput data pipeline using \textbf{Scala} and \textbf{Python} to process incoming market and research data feeds for 300+ healthcare products---aggregating and consolidating 40+ independent data sources for uniform ingestion and analysis}
+        \resumeItem{Prototyped several multivariate regression models in \textbf{Python} using \textbf{Jupyter Notebook} for market forecasting across 20+ sectors---achieving an aggregate performance of <5\% SMAPE across a 3-month production testing window}
+        \resumeItem{Built and deployed a \textbf{CI/CD} pipeline for \textbf{Scala microservices} backed by \textbf{Oracle DB}---automating pre-prod testing and SQA}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\vspace{-16pt}
+\section{Projects}
+    \vspace{-6pt}
+    \resumeSubHeadingListStart
+
+    % Architecture/Digital Design/RTL
+    \resumeProjectHeading
+    {\normalsize{\textbf{NetFPGA SmartNIC}}}{}
+    \resumeItemListStart
+        \resumeItem{Designed a high-throughput network switch capable of intelligent packet routing and preprocessing by payload content}
+        \resumeItem{Architected and developed \textbf{Verilog} RTL for a multi-core NPU, custom network routing logic, and a software-programmable memory interface---achieving 2.5M packet inferences per second with \textbf{Gigabit Ethernet} processing on a \textbf{NetFPGA-1G}}
+    \resumeItemListEnd
+
+    % Architecture/Digital Design/RTL
+    \vspace{-12pt}
+    \resumeProjectHeading
+    {\normalsize{\textbf{Cryptographic Accelerator ASIC}}}{}
+    \resumeItemListStart
+        \resumeItem{Developed architecture and \textbf{SystemVerilog} RTL for a power and area-optimized ASIC for efficiently computing variable delay functions (VDFs)---achieving 30+ million 256-bit hash computations per second with a module size of 105 um x 105 um}
+        \resumeItem{Taped out design using Intel's proprietary 16nm FinFET process in February 2025 with post-silicon ASIC bring-up in Fall 2025\\}
+    \resumeItemListEnd
+
+    % Architecture/Digital Design/RTL
+    \vspace{-12pt}
+    \resumeProjectHeading
+    {\normalsize{\textbf{Multithreaded ARM Processor}}}{}
+    \resumeItemListStart
+        \resumeItem{Designed a 32-bit, 4-way multithreaded, 8-stage pipelined processor in \textbf{Verilog} running a custom ARMv4-compatible ISA}
+        \resumeItem{Synthesized and implemented RTL onto a Xilinx Virtex-II \textbf{FPGA} using \textbf{Xilinx ISE}, achieving the max 200 MHz oscillator clock}
+        \resumeItem{Built a custom Clang-based compiler toolchain and backend for converting \textbf{C} code into hardware-executable \textbf{assembly}}
+    \resumeItemListEnd
+
+    % Digital Design/RTL
+    % \vspace{-12pt}
+    % \resumeProjectHeading
+    % {\normalsize{\textbf{FPGA Dinosaur Game}}}{}
+    % \resumeItemListStart
+    %     \resumeItem{Created a \textbf{Verilog} RTL version of the Google Chrome Dinosaur Game on an Artix-7 \textbf{FPGA} with animated VGA graphics}
+    %     \resumeItem{Verified design using \textbf{Verilator} with a \textbf{C++} and \textbf{gtest} integrated functional model before synthesizing with \textbf{Vivado}}
+    % \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\vspace{-16pt}
+\section{Skills}
+ \begin{itemize}[leftmargin=0.0in, label={}]
+    \small{\item{
+     \vspace{-1pt}
+     \textbf{Languages}{: C++, C, SystemVerilog, Verilog, Python, SystemC, Assembly, VHDL, Bash, Perl, Tcl} \\ %\hspace{1.75cm}%
+     \vspace{-1pt}
+     \textbf{Tools/Techs}{: FPGAs, Vivado, Vitis, Verilator, cocotb, ModelSim, Icarus Verilog, Quartus, Xilinx ISE, CUDA, LLVM, Linux, Git, P4 Helix} \\ %\hspace{0.48cm}
+     \vspace{-1pt}
+     \textbf{Domains}{: Hardware + Software Co-design, Computer Architecture, Systems Software, Open-Source Silicon, GPUs} \\%\hspace{0.48cm}
+    }}
+ \end{itemize}
+
+
+\end{document}
+https://www.overleaf.com/project/647970f4d4e9184c9e54ebed

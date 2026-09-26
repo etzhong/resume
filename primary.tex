@@ -92,7 +92,7 @@
 \newcommand{\resumeCompanyHeading}[2]{
   \vspace{-2pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      {\fontsize{11}{13}\selectfont\textbf{#1}} & \small #2 \\
+      {\fontsize{11.5}{11.5}\selectfont\textbf{#1}} & \small #2 \\
     \end{tabular*}\par\nobreak\vspace{-\parskip}\vspace{-4pt}
 }
 
@@ -100,7 +100,7 @@
 \newcommand{\resumeRoleHeading}[2]{
     \par\nobreak\vspace{4pt}\noindent
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \hspace{0.12in}\textbf{\small #1} & \small #2 \\
+      \hspace{0.1cm}\textbf{\normalsize #1} & \small #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -119,7 +119,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeExperienceItemListStart}{\begin{itemize}[leftmargin=2.8em]}
+\newcommand{\resumeExperienceItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -179,48 +179,47 @@
   \resumeSubHeadingListStart
 
     \resumeCompanyHeading
-      {NVIDIA}{Santa Clara, CA}
+      {NVIDIA}{\textbf{Santa Clara, CA}}
     \resumeRoleHeading
-      {GPU Architect}{June 2025---Present}
+      {GPU Architect}{\textbf{June 2025---Present}}
     \resumeExperienceItemListStart
         \resumeItem{Driving hardware design, arch specification, \textbf{C++} simulation, and functional verification for NVIDIA's next-generation Feynman GPUs. Owned IPs include host \textbf{DMA engines} and work schedulers, \textbf{PCIe}/\textbf{CXL} controller endpoints, and interrupt controllers}
         \resumeItem{Writing custom firmware in \textbf{C} and \textbf{RISC-V assembly} for on-chip dynamic CUDA work scheduling and dependency resolution---enabling low-latency GPU work launch with reduced overhead and enhanced QoS}
-        \resumeItem{Developing simulation libraries in \textbf{C++} and \textbf{C} within NVIDIA's proprietary resman \textbf{kernel driver} and MODS testing framework for initial architectural studies and bring-up of new GPU hardware and software features}
+        \resumeItem{Developing simulation libraries in \textbf{C++} and \textbf{C} within NVIDIA's proprietary resman \textbf{kernel driver} and MODS testing framework for initial architectural studies and bring-up of new GPU hardware + software features}
         \resumeItem{Performing functional and performance testing using a \textbf{Python DSL} across \textbf{C++} simulation, \textbf{RTL}, \textbf{FPGA} emulation, and silicon}
         \resumeItem{Creating a new \textbf{Python} and \textbf{Perl} based flow for communicating multi-die hardware device information to driver software}
         \resumeItem{Training and tuning a new \textbf{AI agent} for \textbf{DFD/DFT}---enabling autonomous debug and RCA of functional failures on end silicon}
     \resumeItemListEnd
-    \vspace{-2pt}
+    \vspace{-1pt}
     \resumeRoleHeading
-      {GPU Architecture Intern}{May 2024---August 2024}
+      {GPU Architecture Intern}{\textbf{May 2024---August 2024}}
       \resumeExperienceItemListStart
             \resumeItem{Developed a \textbf{C++} functional model (fmodel) for a new GPU hardware IP enabling low-latency, real-time interrupt message processing---facilitating RTL, driver, and CUDA development for NVIDIA’s flagship Rubin GPUs}
-            \resumeItem{Built and deployed a new lightweight unit testing infrastructure using \textbf{C++} and \textbf{gtest} within NVIDIA's proprietary simulation environment---accelerating functional and performance testing by up to a 20x speedup over existing testing workflows}
+            \resumeItem{Built and deployed a new lightweight unit testing infrastructure using \textbf{C++} and \textbf{gtest} within NVIDIA's proprietary simulation environment---accelerating functional and performance testing by up to a 20x speedup over existing fullchip testing workflows}
             \resumeItem{Refactored legacy \textbf{C++}/\textbf{SystemC} fmodel with \textbf{C++20} source to improve core sim performance and future code maintainability}
       \resumeItemListEnd
-    \vspace{4pt}
+    \vspace{6pt}
 
     \resumeCompanyHeading
-      {USC Photonic Computing Lab (Opticore)}{Los Angeles, CA}
+      {USC Photonic Computing Lab (Opticore)}{\textbf{Los Angeles, CA}}
     \resumeRoleHeading
-      {Research Fellow}{August 2022---May 2024}
+      {Research Fellow}{\textbf{August 2022---May 2024}}
       \resumeExperienceItemListStart
         \resumeItem{Co-invented and published a novel teraFLOP optical tensor processor with a 25 fJ/Op energy efficiency---offering up to a 40x efficiency improvement over current state-of-the-art electronic processors for machine learning workflows (\href{https://www.science.org/doi/10.1126/sciadv.adu0228}{\underline{Publication Link}})}
         \resumeItem{Designed and verified a high-throughput (10+ GSPS), low-latency (< 100 ns) \textbf{FPGA}-based waveform generation and signal processing module using \textbf{SystemVerilog} and \textbf{C++}. Synthesized design onto an AMD Zynq UltraScale+ RFSoC using \textbf{Vivado}}
         \resumeItem{Developed a custom \textbf{Python} library for host interfacing with lab \textbf{FPGAs} along \textbf{100G Ethernet} to facilitate optical experiments}
       \resumeItemListEnd
-    \vspace{4pt}
+    \vspace{6pt}
 
-    \vspace{3pt}
     \resumeCompanyHeading
-      {IQVIA}{Philadelphia, PA}
+      {IQVIA}{\textbf{Philadelphia, PA}}
     \resumeRoleHeading
-      {Software Engineering Intern}{May 2022---August 2022}
+      {Software Engineering Intern}{\textbf{May 2022---August 2022}}
       \resumeExperienceItemListStart
         \resumeItem{Engineered a high-throughput data pipeline using \textbf{Scala} and \textbf{Python} to process incoming market and research data feeds for 300+ healthcare products---aggregating and consolidating 40+ independent data sources for uniform ingestion and analysis}
         \resumeItem{Prototyped several multivariate regression models in \textbf{Python} using \textbf{Jupyter Notebook} for market forecasting across 20+ sectors---achieving an aggregate performance of <5\% SMAPE across a 3-month production testing window}
         \resumeItem{Built and deployed a \textbf{CI/CD} pipeline for \textbf{Scala microservices} backed by \textbf{Oracle DB}---automating pre-prod testing and SQA}
-    \resumeItemListEnd
+      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
